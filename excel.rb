@@ -22,7 +22,7 @@ pp sheet1.map{|row| row.formats.map{|f| "size=#{f.font.size};" if f}.join "\t\t"
 
 #CREATE NEW ONE
 new_book = Spreadsheet::Workbook.new
-new_sheet = new_book.create_worksheet :name => 'New Worksheet'
+new_sheet = new_book.create_worksheet :name => 'New Worksheet '
 
 #INSERT DATA
 new_sheet.row(0).concat %w{Name Country Acknowlegement}
